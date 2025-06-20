@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Order Drinks - Charlie & Pim's Kitty Kafe</title>
+
+<link rel="stylesheet" href="order.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lexend+Mega:wght@100..900&display=swap"
+rel="stylesheet">
+
+</head>
+
+<!----------------------------------------------------------------------------------------------------------------------->
+<!-- Header -->
+
+<body>
+<header>
+	<!-- Title Card -->
+	<h1 id="title"><img src="images/Charlie_Pim.jpg" alt="Picture of Charlie & Pim" width="200" height="200"><br>Charlie & Pim's Kitty Kafe</h1>
+
+	<!-- Navigation Menu -->
+	<nav>
+		<ul id="navigation-menu">
+			<li><a href="index.html" class="navigation-links">Home</a></li>
+			<li><a href="menu.html" class="navigation-links">Menu</a></li>
+			<li><a href="order.html" class="navigation-links">Order Drinks</a></li>
+			<li><a href="order-beans.html" class="navigation-links">Order Beans</a></li>
+			<li><a href="recipes.html" class="navigation-links">Recipes</a></li>
+			<li><a href="community.html" class="navigation-links">Community</a></li>
+			<li><a href="locations.html" class="navigation-links">Locations</a></li>
+		</ul>
+	</nav>
+</header>
+
+<!----------------------------------------------------------------------------------------------------------------------->
+<!-- Body -->
+<main>
+<!-- Intro Header & Paragraph -->
+<h1 id="page-header">Dine-In & Carryout</h1>
+<p id="intro-blurb">In a rush? Place an order online and I'll have it ready by the time you get here.</p>
+
+<!-- Order Form -->
+<form action="" method=POST>
+
+	<!-- Customer Contact Info -->
+	<fieldset>
+		<legend>Contact Information</legend>
+		<table id="customer-contact">
+			<tr>
+				<th><label for="order-form">Name:</label></th>
+				<th class="order-input"><input type="text" name="cust-name" id="order-form"></th>
+			</tr>
+			<tr>
+				<th><label for="order-form">Phone #:</label></th>
+				<th class="order-input"><input type="text" name="cust-phone"></th>
+			</tr>
+			<tr>
+				<th><label for="order-form">Email:</label></th>
+				<th class="order-input"><input type="text" name="cust-email"></th>
+			</tr>
+			<tr>
+				<th style="vertical-align: top;"><label for="order-form">Special Instructions:</label></th>
+				<th><textarea name="instructions" rows="6" cols="40" maxlength="400"
+				placeholder="No more than 400 characters please."></textarea></th>
+			</tr>
+		</table>
+	</fieldset>
+
+	<!-- Order Builder -->
+	<fieldset>
+		<legend>Build Your Order</legend>
+
+		<!-- Temperature Choice -->
+		<fieldset>
+			<ul class="order-builder">
+				<legend><b>Hot or Iced</b></legend>
+				<li><label><input type="radio" name="temperature" value="hot" checked="checked"> Hot</label></li>
+				<li><label><input type="radio" name="temperature" value="iced"> Iced</label></li>
+			</ul>
+		</fieldset>
+
+		<!-- Size Choice -->
+		<fieldset>
+			<ul class="order-builder">
+				<legend><b>Size</b></legend>
+				<li><label><input type="radio" name="size" value="single"> Single Shot</label></li>
+				<li><label><input type="radio" name="size" value="double"> Double Shot</label></li>
+			</ul>
+		</fieldset>
+
+		<!-- Roast Choice -->
+		<fieldset>
+			<ul class="order-builder">
+				<legend><b>Select Your Roast</b></legend>
+				<li><label><input type="radio" name="roast" value="medium-light"> Medium-Light Roast</label></li>
+				<li><label><input type="radio" name="roast" value="medium"> Medium Roast</label></li>
+				<li><label><input type="radio" name="roast" value="medium-dark"> Medium-Dark Roast</label></li>
+				<li><label><input type="radio" name="roast" value="dark"> Dark Roast</label></li>
+			</ul>
+		</fieldset>
+
+		<!-- Milk Choice -->
+		<fieldset>
+			<ul class="order-builder">
+				<legend><b>Choose Your Milk</b></legend>
+				<li><label><input type="radio" name="milk" value="whole" checked="checked"> Whole Milk</label></li>
+				<li><label><input type="radio" name="milk" value="oatmilk"> Oatmilk</label></li>
+				<li><label><input type="radio" name="milk" value="lact-free"> Lactose-Free</label></li>
+			</ul>
+		</fieldset>
+
+		<!-- Sweeteners & Flavors Choices -->
+		<fieldset>
+			<ul class="order-builder">
+				<legend><b>Sweeteners & Flavors</b></legend>
+				<li><label><select name="sugar" size="1">
+					<option>0</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select> Teaspoon Sugar</label></li>
+
+				<li><label><select name="stevia" size="1">
+					<option>0</option>
+					<option>0.5</option>
+					<option>1</option>
+					<option>1.5</option>
+					<option>2</option>
+				</select> Teaspoon Stevia</label></li>
+				
+				<li><label><input type="checkbox" name="extras" value="caramel"> Caramel Syrup</label></li>
+				<li><label><input type="checkbox" name="extras" value="vanilla"> Vanilla Syrup</label></li>
+				<li><label><input type="checkbox" name="extras" value="hazelnut"> Hazelnut Syrup</label></li>
+				<li><label><input type="checkbox" name="extras" value="lavender"> Lavender Syrup</label></li>
+				<li><label><input type="checkbox" name="extras" value="hazelnut"> Caramel Sauce</label></li>
+				<li><label><input type="checkbox" name="extras" value="hazelnut"> Chocolate Sauce</label></li>
+				<li><label><input type="checkbox" name="extras" value="hazelnut"> White Chocolate Sauce</label></li>
+				<li><label><input type="checkbox" name="extras" value="condensed-milk"> Sweetened Condensed Milk</label></li>
+			</ul>
+		</fieldset>
+	</fieldset>
+
+	<!-- Submit & Reset Buttons -->
+	<p><input type="submit" value="Submit Order"><input type="reset" value="Restart Order"></p>
+
+</form>
+<!-- End Order Form -->
+</main>
+</body>
+
+<!----------------------------------------------------------------------------------------------------------------------->
+<!-- Footer -->
+
+<!-- Contact Info -->
+<aside>
+<div id="aside-content">
+	<h3>Contact Us</h3>
+	<ul id="contact">
+		<li>Email: <a href="mailto:gb3601@wayne.edu">gb3601@wayne.edu</a></li>
+		<li>Phone: (586) 663-6583<li>
+	</ul>
+
+	<!-- Business Hours -->
+	<h3>Hours of Business</h3>
+	<table>
+		<caption>Open for visitors during these hours</caption>
+		<!-- Sunday -->
+		<tr>
+			<th class="hours-day">Sun</th>
+			<th class="hours-hours">8:00PM</th>
+			<th>-</th>
+			<th class="hours-hours">11:00PM</th>
+		</tr>
+
+		<!-- Monday -->
+		<tr>
+			<th class="hours-day">Mon</th>
+			<th class="hours-hours">10:00AM</th>
+			<th>-</th>
+			<th class="hours-hours">7:00PM</th>
+		</tr>
+
+		<!-- Tuesday -->
+		<tr>
+			<th class="hours-day">Tues</th>
+			<th class="hours-hours">2:00PM</th>
+			<th>-</th>
+			<th class="hours-hours">7:00PM</th>
+		</tr>
+
+		<!-- Wednesday -->
+		<tr>
+			<th class="hours-day">Wed</th>
+			<th class="hours-hours">10:00AM</th>
+			<th>-</th>
+			<th class="hours-hours">7:00PM</th>
+		</tr>
+
+		<!-- Thursday -->
+		<tr>
+			<th class="hours-day">Thurs</th>
+			<th class="hours-hours">2:00PM</th>
+			<th>-</th>
+			<th class="hours-hours">6:00PM</th>
+		</tr>
+
+		<!-- Friday -->
+		<tr>
+			<th class="hours-day">Fri</th>
+			<th class="hours-hours">8:00PM</th>
+			<th>-</th>
+			<th class="hours-hours">11:00PM</th>
+		</tr>
+		
+		<!-- Saturday -->
+		<tr>
+			<th class="hours-day">Sat</th>
+			<th class="hours-hours">8:00PM</th>
+			<th>-</th>
+			<th class="hours-hours">11:00PM</th>
+		</tr>
+	</table>
+</div>
+</aside>
+
+<footer>
+	<!-- Bottom Copyright Notice -->
+	<p style="text-align: right"><small>Copyright Charlie & Pim's Kitty Kafe &copy 2024</small></p>
+</footer>
+</body>
+</html>

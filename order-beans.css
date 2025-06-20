@@ -1,0 +1,277 @@
+/* Broad Elements Styling */
+html {  
+    box-sizing: border-box; 
+} 
+  
+* {  
+    box-sizing: inherit; 
+}
+  
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 25px;
+    border: double 6px #874c12; 
+    border-radius: 20px;
+}
+  
+body {
+    background-color: #dbd7c9;
+    background-image: url(images/Background_Image.png);
+    background-attachment: fixed;
+    font-family: sans-serif;
+    font-size: 100%;
+}
+  
+h1 {
+    text-align: center;
+    font: 200 3em "Lexend Mega", sans-serif;
+    color: #ffa91f;
+    text-transform: uppercase;
+    border-bottom: 1px solid #57b1dc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+  
+h2 {
+    border-top: 2px solid;   
+    border-left: 4px solid;
+    padding-top: .5em;     
+    padding-left: .5em;
+    color: #67bdc7;
+    font-size: 1em;
+}
+  
+dfn {
+    font-style: normal;
+}
+  
+section {
+    border-bottom: 1px solid #57b1dc;
+}
+ 
+table {
+    border: 1px solid black;
+}
+ 
+tr, th {
+    border: 1px solid #CCC;
+    min-width: 1em;
+}
+
+em {
+    color: #ffa91f;
+}
+  
+a {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+a:link{
+    color: #67bdc7;
+}
+a:visited {
+    color: #cc6600;
+}
+a:hover {
+    color: #037d9c;
+}
+a:active {
+    color: #ffa91f;
+}
+  
+legend {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #67bdc7;
+}
+/* End Broad Elements Styling */
+  
+/* Specific Elements Styling */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+nav ul li a{
+    display: block;
+    border: 1px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em;
+}
+
+#customer-contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.order-input {
+    text-align: left;
+}
+  
+.order-builder {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-builder li {
+    padding-top: 25px;
+}
+
+.order-builder label {
+    width: 200px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    vertical-align: top;
+}
+
+.order-builder img {
+    vertical-align: top;
+}
+  
+#intro-blurb {
+    font: bold 1.5em serif;
+}
+/* End Specific Elements Styling */
+  
+/* Header Styling */
+header {
+    height: 31em;
+    background-image: url(images/Coffee_Beans_Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#navigation-menu {
+    list-style-type: none;
+}
+  
+.navigation-links {
+    font-style: normal;
+}
+  
+header a:link{
+    color: #67bdc7;
+}
+header a:visited {
+    color: #67bdc7;
+}
+header a:hover {
+    color: #037d9c;
+}
+header a:active {
+    color: #67bdc7;
+}
+  
+#page-header {
+    height: 2.5em;
+    background-image: url(images/Header_Border_Coffee.png);
+    background-size: 2%;
+    background-repeat: repeat-x;
+    background-position-y: 75%;
+}
+/* End Header Styling */
+ 
+/* Footer Styling */
+footer {
+    padding-left: 2em;
+    padding-right: 2em;
+    border-top: 1px solid #57b1dc;
+}
+  
+/* Extra padding for the contact and hours */
+aside {
+    padding-left: 2em;
+    margin-top: 25px;
+    border: double 6px #874c12;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+  
+#contact {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.hours-day {
+    width: 4em;
+}
+  
+.hours-hours {
+    width: 5em;	
+}
+/* End Footer Styling */
+
+/* Start Styling for Smaller Screens */
+@media screen and (max-width: 750px) {
+
+    header {
+        min-width: 350px;
+    }
+
+    nav ul li{
+        width: 50%;
+        text-align: center;
+    }
+
+    main {
+        min-width: 350px;
+    }
+
+    main img {
+        float: none;
+        margin: 0 10;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
+/* End Styling for Smaller Screens */
+
+/* Start Two-Column Layout for Larger Screens */
+@media screen and (min-width: 1000px){
+    body {  
+        display: grid;  
+        grid-template-rows: auto min-height 5em;  
+        grid-template-columns: minmax(18em, 1fr) 18em;  
+        grid-template-areas:    
+          "banner banner"
+          "main hours"
+          "footer footer";
+        max-width: 1500px;
+        margin: 0 auto;
+        position: relative; 
+    }
+
+    header {  
+        grid-area: banner; 
+    } 
+    
+    main {  
+        grid-area: main; 
+    } 
+
+    aside {  
+        grid-area: hours;  
+        padding: 1em;  
+    }
+
+    #aside-content {
+        position: sticky;
+        top: 30px;
+    }
+
+    footer {  
+        grid-area: footer; 
+    } 
+}
+/* End Two-Column Layout for Larger Screens */
