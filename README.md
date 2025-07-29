@@ -35,8 +35,12 @@ A repository to contain the Kitty Kafe website source code.The Kitty Kafe is a m
 **4. decaf-switcher.js:** This file is used on the Order Beans Page. It provides the functionality for switching the view between viewing caffeinated and decaffeinated coffee beans to select for an order.
 
 ## Future Changes
-1. Provide a backend that interfaces with the order pages so that the user can place real orders that can be sent to an email (or other platform) to be fulfilled.
-2. Increase the number of screen size variations so that the website is even more accessible to users using the wide variety of displays available on web-capable devices. Also, the videos should be in multiple sizes, just like the images.
-3. Condense both order pages into 1 order page that users can visit to order prepared food and roasted beans.
-4. Incorporate Menu Page elements and/or format into the order pages. This would give the user 1 comprehensive page to view menu items (and their info) and order food/beans. This would improve the user experience and reduce the number of pages for the user to navigate. Combined with Future Change #3, there would be a reduction of 2 pages.
-5. Create a database to house menu items (including beans), location data, community forum post data, and user data. This would open the door to actual functionality of the Community Page and a sign-in/sign-up page. This database would interface with the web app to enable consistent orders and the ability for the Community Page to no longer be hard-coded. 
+**1.** Provide a backend that interfaces with the order pages so that the user can place real orders that can be sent to an email (or other platform) to be fulfilled.
+
+**2.** Increase the number of screen size variations so that the website is even more accessible to users using the wide variety of displays available on web-capable devices. Also, the videos should be in multiple sizes, just like the images.
+
+**3.** Condense both order pages into 1 order page that users can visit to order prepared food and roasted beans.
+
+**4.** Incorporate Menu Page elements and/or format into the order pages. This would give the user 1 comprehensive page to view menu items (and their info) and order food/beans. This would improve the user experience and reduce the number of pages for the user to navigate. Combined with Future Change #3, there would be a reduction of 2 pages.
+
+**5.** Create a database to house menu items (including beans), location data, community forum post data, and user data. This would open the door to actual functionality of the Community Page and a sign-in/sign-up page. This database would interface with the web app to enable consistent orders and the ability for the Community Page to no longer be hard-coded. 
