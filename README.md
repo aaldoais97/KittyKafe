@@ -1,5 +1,7 @@
+### Update: 7/29/2025
+
 # KittyKafe
-A repository to contain the Kitty Kafe website source code.The Kitty Kafe is a mock cafe that offers a place to study, order coffee beans or prepared drinks &amp; desserts, and calm the sense by spending time with a kitty.
+A repository to contain the Kitty Kafe website source code.The Kitty Kafe is a mock cafe that offers a place to study, order coffee beans or prepared drinks & desserts, and calm the sense by spending time with a kitty.
 
 ## Page List (HTML & CSS for each unless otherwise stated)
 **1. Index:** This is the Home Page for the Kitty Kafe site. It includes information about the company and what we offer.
@@ -24,11 +26,13 @@ A repository to contain the Kitty Kafe website source code.The Kitty Kafe is a m
   **3. Contact & Business Hours Area:** A vertical side section that includes business contact information and business hours (to be added: this information changes  depending on a location selection that would be globally applied for the session).
 
 ## Other Features/Files
-**1. Images:** The "images" folder holds all images used on the website.
+**1. images:** The "images" folder holds all images used on the website.
 
-**2. Videos:** The "videos" folder holds all videos used on the website.
+**2. videos:** The "videos" folder holds all videos used on the website.
 
-**3. decaf-switcher.js:** This file is used on the Order Beans Page. It provides the functionality for switching the view between viewing caffeinated and decaffeinated coffee beans to select for an order.
+**3. Documentation:** The "Documentation" folder holds all documentation for the website. Currently, it contains a site diagram that shows the relationship between pages on the site. This folder is capitalized because it is not a folder the web app references.
+
+**4. decaf-switcher.js:** This file is used on the Order Beans Page. It provides the functionality for switching the view between viewing caffeinated and decaffeinated coffee beans to select for an order.
 
 ## Future Changes
 1. Provide a backend that interfaces with the order pages so that the user can place real orders that can be sent to an email (or other platform) to be fulfilled.
